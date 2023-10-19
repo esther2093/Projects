@@ -1,0 +1,27 @@
+Figma Link
+
+https://www.figma.com/file/OcAUXkjJETkU3EfFscOBnK/BMY-Website?type=design&node-id=0%3A1&mode=design&t=82oE7IWQG4D1DYuF-1
+
+
+
+
+Research: 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
+const range = (start, stop, step) =>
+  Array.from({ length: (stop - start) / step + 1 }, (_, i) => start + i * step);
+
+  https://www.florin-pop.com/blog/2019/09/random-meal-generator/
+  const createMeal = (meal) => {
+  const ingredients = [];
+  // Get all ingredients from the object. Up to 20
+  for(let i=1; i<=20; i++) {
+    if(meal[`strIngredient${i}`]) {
+      ingredients.push(`${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`)
+    } else {
+      // Stop if no more ingredients
+      break;
+    }
+  }
+  }
+
+  

@@ -1,0 +1,44 @@
+Database Design Lifecycle
+
+Overview: The goal is to create a real-time database after fetching data externally via an API (choose 
+from the list or find your own). The project should follow the MVC model, and ideally include a 
+start-up routine that initially fetches the data and populates the database. All CRUD operations 
+should be included, and demonstrated via Postman or Swagger (a front-end is not required). The database 
+structure should reflect the structure of the data returned from the external API, but does not need to 
+include everything.
+
+Essential Requirements:
+- The system fetches data extertnally from a third-party API 
+- The system follows the MVC
+- The system has a start-up routine that initally fetches the data and populates the data
+- The system can be manipualted with CRUD operations 
+
+Requriement Anaylsis 
+Current data processing - have to rely on third party API structure to access data which makes it slow 
+
+Information Requirements: 
+- Fruit -> name, family, genus, order
+- Nutrition -> calories, carbs, protein, sugar, fat
+
+Software platform - MySQL 
+Boundaries and scope - allows the manipulation of data fetched from a third party API to be 
+manipualted by CRUD operations but only on the fetched data 
+
+Why SQL? 
+Seeing the data in a list makes it easier to see and like the breakdown of settings + list view
+
+Database Desigining
+
+Logical model
+<see logicalmodel.png>
+
+Physical model 
+<see physicalmodel.png> 
+
+
+
+Implementation 
+- Data Conversion and loading
+- Testing 
+
+

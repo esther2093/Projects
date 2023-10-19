@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#root {
+  margin: auto;
+  text-align: center;
+}
+
+.roseLogo {
+  width: 4em;
+}
+
+.homepagetotal,
+.LoginPage,
+.RecipePage,
+.CocktailPage {
+  background-color: #ffe8d6;
+  height: 100%;
+}
+
+.homepagecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepageHeader {
+  font-family: 'Qwitcher Grypen';
+  width: 40vw;
+  overflow: auto;
+  font-size: 3em;
+  border-bottom: double 0.05em;
+}
+
+.roseLogoTitle {
+  width: 1em;
+}
+
+.homepageheaderbox {
+  color: #4a5759;
+  padding: 1em;
+  font-size: 2em;
+  justify-content: center;
+}
+
+.homepagebannerbox {
+  width: 95%;
+  margin: 1em;
+  background-size: cover;
+  background-position: center;
+  background-image: url('src/assets/HomeBanner.png');
+  padding: 0.5em;
+}
+
+.homepagebannertextbox {
+  border: #4a5759 double 0.5em;
+  color: black;
+  opacity: 0.8;
+  padding: 0.5em;
+  background-color: #dedbd2;
+}
+
+.homepagebannertext {
+  padding: 0.2em;
+  font-size: 3.5em;
+  font-weight: 800;
+  font-family: 'Qwitcher Grypen';
+}
+
+.homepageoptionsbox {
+  display: flex;
+  width: 90vw;
+  padding: 1.5em 3em 3em 3em;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.foodImageBox {
+  background-image: url('src/assets/Food.png');
+  padding: 0.5em;
+  width: 25vw;
+  height: 50%;
+  background-size: cover;
+  color: #4a5759;
+}
+
+.cocktailImageBox {
+  background-image: url('src/assets/Cocktail.png');
+  padding: 0.5em;
+  width: 25vw;
+  height: 50%;
+  background-size: cover;
+}
+
+.foodImageTextBox,
+.cocktailImageTextBox {
+  background-color: #dedbd2;
+  opacity: 0.7;
+  font-size: 5em;
+  padding: 1em;
+  text-align: center;
+}
+
+.foodImageText,
+.cocktailImageText {
+  font-family: 'Qwitcher Grypen';
+}
+
+.welcomeGreeting {
+  font-family: 'Qwitcher Grypen';
+  font-size: 4em;
+}
+
+.logoutButton {
+  font-size: 1em;
+  background-color: #ddbea9;
+  margin-bottom: 1em;
+}
+
+.LoginPageHeader,
+.RecipePageHeader,
+.CocktailPageHeader {
+  padding: 0.5em 0.5em 0em 0.5em;
+  text-decoration: underline;
+  font-size: 5em;
+  font-family: 'Qwitcher Grypen';
+  color: #B40421
+}
+
+.lockIcon {
+  color: #4a5759;
+}
+
+.recipeThumbnail,
+.cocktailThumbnail {
+  width: 50%;
+}
+
+.recipeCard,
+.cocktailCard {
+  border: 0.4em double;
+  margin: 2em;
+}
+
+
+.fullRecipeListbody,
+.fullCocktailListbody {
+  padding: 1em;
+}
+
+.searchForm {
+  padding: 0.5em;
+}
+
+.searchFormInput {
+  width: 30vw;
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 10px;
+  border: none;
+}
+
+.searchButton {
+  width: 10vw;
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 0.5em;
+  background-color: #ddbea9;
+}
+
+.recipeCard,
+.cocktailCard {
+  display: flex;
+}
+
+.recipeCardImage,
+.cocktailCardImage {
+  padding: 2em;
+  border: 0.2em dashed #4a5759;
+  margin: 2em;
+}
+
+.recipeThumbnail,
+.cocktailThumbnail {
+  width: 18vw;
+}
+
+.recipeCardInformation,
+.cocktailCardInformation {
+  padding: 2em;
+  text-align: left;
+  width: 50vw;
+}
+
+.recipeCardTitle,
+.cocktailCardTitle {
+  text-decoration: overline;
+  text-align: center;
+  font-family: 'Qwitcher Grypen';
+  font-size: 3em;
+  ;
+  font-weight: 700;
+  padding-top: 0.5em;
+}
+
+.recipeCardIngredientsHeader,
+.cocktailCardIngredientsHeader {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.2em;
+
+}
+
+.recipeCardInstructionsHeader,
+.cocktailCardInstructionsHeader {
+  padding-top: 0.5em;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.2em;
+}
+
+.backButton {
+  width: 13vw;
+  font-size: 1em;
+  padding: 0.5em;
+  margin-bottom: 1.5em;
+  background-color: #ddbea9;
+}
+
+@media (max-width: 1400px) {
+  .foodImageTextBox,
+  .cocktailImageTextBox {
+    font-size: 3.5em;
+  }
+
+  .homepagebannertext {
+    font-size: 2em;
+  }
+
+  .homepageHeader {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 1170px) {
+.homepageHeader {
+  font-size: 1.7em;
+}
+
+.foodImageTextBox,
+.cocktailImageTextBox {
+  font-size: 3em;
+}
+}
+
+@media (max-width: 800px) {
+  .foodImageTextBox,
+  .cocktailImageTextBox {
+
+    font-size: 2em;
+
+  }
+
+  .homepageHeader {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 600px) {
+  .roseLogo {
+    width: 2em;
+  }
+
+  .HomeBanner {
+    width: 80vw;
+  }
+
+  .homepageHeader {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+    padding: 0em;
+  }
+
+  .roseLogoTitle {
+    width: 0.5em;
+  }
+
+  .homepagebannertext {
+    font-size: 1.5em;
+  }
+
+  .homepageoptionsbox {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .foodImageBox,
+  .cocktailImageBox {
+    width: 80vw; 
+    margin-bottom: 1em; 
+  }
+
+  .foodImageTextBox,
+  .cocktailImageTextBox {
+    font-size: 2em; 
+    padding: 1em;
+    text-align: center;
+  }
+
+  .welcomeGreeting {
+    font-family: 'Qwitcher Grypen';
+    font-size: 2m;
+  }
+
+  .logoutButton {
+    margin-top: 1em;
+    font-size: 1em;
+  }
+
+  .searchFormInput {
+    width: 60vw;
+  }
+
+  .searchButton {
+    width: 20vw;
+  }
+
+  .recipeCard,
+  .cocktailCard {
+    display: block;
+  }
+
+  .backButton {
+    width: 50vw;
+  }
+
+  .recipeCardInformation,
+  .cocktailCardInformation {
+    padding: 1em;
+    text-align: left;
+    width: 90vw;
+  }
+
+  .recipeCardTitle,
+  .cocktailCardTitle {
+    font-size: 2em;
+    ;
+  }
+
+  .recipeThumbnail,
+  .cocktailThumbnail {
+    width: 80%;
+  }
+
+  .recipeCard,
+  .cocktailCard {
+    margin: 0.5em;
+  }
+
+  .recipeCardImage,
+  .cocktailCardImage {
+    margin: 1em;
+    padding: 1em;
+  }
+
+  .LoginPageHeader,
+  .RecipePageHeader,
+  .CocktailPageHeader {
+    padding: 0;
+    font-size: 4.5em;
+  }
+
+  .searchButton {
+    width: 30vw;
+  }
+
+}

@@ -1,0 +1,5 @@
+Landing page - cards for posts, navbar, search bar and way to get to their own userAccount
+user account page - place with own details, own posts cards, a place to make a post so when you post it, it will 
+come up in the your posts section also a way to get into the messages 
+Message page - just an outline of what it will look like potentially 
+Stats sheet - show's how the 

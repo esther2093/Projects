@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <title>Anti Snowcial Snocial Club </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,400;0,500;0,800;1,400;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,400;0,500;0,800;1,400;1,800&display=swap');
+</style>
+
+<body>
+    <h1 class="productHeader">Anti-Snowcial Snowcial Club
+    </h1>
+    <div class="animation1-container">
+        <iconify-icon icon="la:snowboarding" width="45" height="45"></iconify-icon>
+    </div>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+    </div>
+
+    
+
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #e3f2fd;" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavLightDropdown" aria-controls="navbarNavLightDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavLightDropdown" aria-controls="navbarNavLightDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+            </div>
+        </div>
+
+        <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn" type="submit">Search</button>
+            <div>
+        </form> -->
+        <a class="userAccountIcon" href="./userAccount.html">
+            <iconify-icon icon="la:snowboarding" width="40" , height="40"></iconify-icon>
+        </a>
+        </div>
+    </nav>
+
+    <template id="user-post-card-template">
+        <div class="row">
+            <div class="col">
+                <div class="user-post-card mb-4 overflow-auto">
+                    <h2 class="user-post-card-name">Title</h2 <div class="user-post-card-body">
+                        <a class="postPageLink" href="./postPage.html">
+                            <img src="" class="user-post-card-image" alt="..." /></a>
+                            <p class="user-post-card-username">Posted by:</p>
+                            <p class="user-post-card-location">Located:</p>
+                    <p class="user-post-card-category">Category</p>
+                    <p class="user-post-card-price">Price</p>
+                    <p class="user-post-card-description">Description</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </template>
+
+    <main>
+        <div class="profileContainer">
+            <div class="profileBox">
+                <div class="profilePicBox">
+                    <img src="https://cdn.britannica.com/21/233221-050-A0038475/torah-bright-Australia-snowboarder-2014.jpg" class="profilePic" />
+                </div>
+                <div class="userDetails">
+                    <p class="username">User: nowboarder1</p>
+                    <p class="location">Location: Sydney</p>
+                </div>
+                <div class="messageButtonBox">
+                    <form class="messageButton" action="./messagepage.html">
+                        <input type="submit" value="Message Inbox" class="actualMessageButton" />
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="rightBox">
+                <div class="yourPostsBox">
+                    <p class="yourPostsHeader">Your posts:</p>
+                    <div id="user-post-list"></div>
+                </div>
+
+                <div id="newPostBox">
+                    <p id="newPost" />
+                </div>
+                
+                <form id="postForm" onsubmit="addNewPost(event)">
+                    <div class="formBox">
+                        <h2>Post a new item:</h2>
+
+                        <div class="mb-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Picture URL:</label>
+                            <input type="text" class="form-control" id="postPic" placeholder="">
+                             
+                            </div>
+                            <label for="exampleFormControlInput1" class="form-label">Name of item:</label>
+                            <input type="text" class="form-control" id="postName" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Price: $</label>
+                            <input type="img" class="form-control" id="postPrice" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Category:</label>
+                            <input type="text" class="form-control" id="postCategory"
+                                placeholder="Example: Snowboard, bindings, accessories, used, new, etc">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Username:</label>
+                            <input type="text" class="form-control" id="postUsername"
+                                placeholder="Fill in your username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Location:</label>
+                            <input type="text" class="form-control" id="postLocation"
+                                placeholder="Example: Sydney, Australia">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Description:</label>
+                            <textarea class="form-control" id="postDescription" rows="3"
+                                placeholder="Write a brief description about your item here"></textarea>
+                        </div>
+                        <button class="submitBtn" type="submit" >Ollie it!</button>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <script type="text/javascript" src="posts.js"></script>
+    <script type="text/javascript" src="userAccount.js"></script>
+</body>
+
+<footer>
+    <div class="statLinkBox">
+        <a class="statLink" href="./stats.html">About this site</a>
+    </div>
+    <div class="footerCopyright">Created by Esther © 2023</div>
+</footer>
+
+</html>

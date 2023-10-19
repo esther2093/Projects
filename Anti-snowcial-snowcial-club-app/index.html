@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <title>Anti Snowcial Snocial Club </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,400;0,500;0,800;1,400;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,400;0,500;0,800;1,400;1,800&display=swap');
+</style>
+
+<body>
+    <div class-="headerContainer">
+        <h1 class="productHeader">Anti-Snowcial Snowcial Club</h1>
+    </div>
+    <div class="animation1-container">
+        <iconify-icon icon="la:snowboarding" width="50" height="50"></iconify-icon>
+    </div>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #e3f2fd;" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavLightDropdown" aria-controls="navbarNavLightDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavLightDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Post Categories
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li><a class="dropdown-item1" href="#"
+                                    onclick="filterDisplayPosts(`snowboard`)">Snowboards</a>
+                            </li>
+                            <li><a class="dropdown-item2" href="#" onclick="filterDisplayPosts(`bindings`)">Bindings</a>
+                            </li>
+                            <li><a class="dropdown-item3" href="#" onclick="filterDisplayPosts(`boots`)">Boots</a>
+                            </li>
+                            <li><a class="dropdown-item4" href="#" onclick="filterDisplayPosts(`clothing`)">Clothing</a>
+                            </li>
+                            <li><a class="dropdown-item5" href="#" onclick="filterDisplayPosts(`gloves`)">Gloves</a>
+                            </li>
+                            <li><a class="dropdown-item6" href="#" onclick="filterDisplayPosts(`helmet`)">Helmet</a>
+                            <li><a class="dropdown-item7" href="#" onclick="filterDisplayPosts(`goggle`)">Goggle</a>
+                            <li><a class="dropdown-item8" href="#" onclick="filterDisplayPosts(`accessory`)">Accessory</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+            <button class="btn" type="submit" id="searchButton">Search</button>
+            <div>
+                <a class="userAccountIcon" href="./userAccount.html">
+                    <iconify-icon icon="la:snowboarding" width="45" height="45"></iconify-icon>
+                </a>
+            </div>
+    </nav>
+
+    <template id="post-card-template">
+        <div class="row ">
+            <div class="col">
+                <div class="post-card mb-3 overflow-auto">
+                    <h2 class="post-card-name">Title</h2>
+                    <div class="post-card-body">
+                        <a class="postPageLink" href="./postPage.html">
+                            <img src="" class="post-card-image" alt="..." /></a>
+                            <p class="post-card-username">Posted by:</p>
+                            <p class="post-card-location">Located:</p>
+                        <p class="post-card-category">Category</p>
+                        <p class="post-card-price">Price</p>
+                        <p class="post-card-description">Description</p>
+
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Message [user]:</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Write your message</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                      </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Stomp Message</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Message [user]:</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  Message sent! Wait for the stomp!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnCase">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Message</button>
+                </div>
+            </div>
+    </template>
+
+
+    <main>
+
+    <!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://skijunket.com/wp-content/uploads/2022/08/Snowboard-Accessories-08082022-min.jpg" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://manofmany.com/wp-content/uploads/2018/05/10-Best-Ski-and-Snowboard-Shops-in-Melbourne-Auski.jpg" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://manofmany.com/wp-content/uploads/2018/05/10-Best-Ski-and-Snowboard-Shops-in-Melbourne-Twelve-Board-Store-2.jpg" class="d-block" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+
+        <div id='post-list'>
+        </div>
+    </main>
+             <script type="text/javascript" src="posts.js"></script>
+            <script type="text/javascript" src="index.js"></script>
+</body>
+
+<footer>
+    <div class="statLinkBox">
+        <a class="statLink" href="./stats.html">About this site</a>
+    </div>
+    <div class="footerCopyright">Created by Esther © 2023</div>
+    
+</footer>
+
+</html>
